@@ -1,0 +1,10 @@
+{
+  "FCoref": {
+    "error": "unsupported format string passed to NoneType.__format__",
+    "model_name": "FCoref"
+  },
+  "LingMessCoref": {
+    "error": "unsupported format string passed to NoneType.__format__",
+    "model_name": "LingMessCoref"
+  }
+}

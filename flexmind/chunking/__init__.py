@@ -1,10 +1,10 @@
 """
-Chunking module for FlexMind
-
-Contains coreference-safe chunking implementations that maintain 
-contextual coherence for human-like memory processing.
+FlexMind chunking module - Human-like memory with late chunking for pronoun resolution.
 """
 
-from .coref_chunker import CorefSafeChunker, Chunk
+# Temporarily disabled imports during TDD rewrite
+# from .models import TextSpan, CoreferenceCluster, CoreferenceResult, EnhancedCoreferenceResult
+# from .late_chunker import LateChunker
+# from .coref_chunker import CorefSafeChunker, Chunk
 
-__all__ = ["CorefSafeChunker", "Chunk"]
+__all__ = []

@@ -1,0 +1,57 @@
+{
+  "precision": 0.4166666666666667,
+  "recall": 0.625,
+  "f1": 0.5,
+  "accuracy": 0.2,
+  "speed_tokens_per_sec": 874.9245155104841,
+  "total_time": 0.059433698654174805,
+  "total_tokens": 52,
+  "total_entities_predicted": 24,
+  "total_entities_actual": 16,
+  "fallback_rate": 0.8,
+  "per_entity_metrics": {
+    "PERSON": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.888888888888889,
+      "support": 5
+    },
+    "GPE": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "support": 3
+    },
+    "LABEL_0": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "LABEL_1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "ORG": {
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4,
+      "support": 4
+    },
+    "DATE": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "support": 2
+    },
+    "MONEY": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2
+    }
+  },
+  "timestamp": 1755244780.74209
+}

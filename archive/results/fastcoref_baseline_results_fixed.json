@@ -1,0 +1,205 @@
+{
+  "model_name": "FCoref",
+  "init_time": 2.4973859786987305,
+  "test_results": [
+    {
+      "case_id": "alice_beth_cafe",
+      "text": "When Alice met Beth at the caf\u00e9, she told her that she had won the lottery.",
+      "difficulty": "high",
+      "raw_predictions": "[CorefResult(text=\"When Alice met Beth at the caf\u00e9, she told her that...\", clusters=[['Beth', 'she', 'her'], ['Alice', 'she']])]",
+      "analysis": {
+        "num_clusters": 2,
+        "clusters": [
+          [
+            "Beth",
+            "she",
+            "her"
+          ],
+          [
+            "Alice",
+            "she"
+          ]
+        ],
+        "cluster_sizes": [
+          3,
+          2
+        ],
+        "total_entities": 5,
+        "pronoun_clusters": [
+          [
+            "Beth",
+            "she",
+            "her"
+          ],
+          [
+            "Alice",
+            "she"
+          ]
+        ],
+        "has_pronoun_resolution": true,
+        "alice_cluster": [
+          "Alice",
+          "she"
+        ],
+        "beth_cluster": [
+          "Beth",
+          "she",
+          "her"
+        ],
+        "ambiguity_handled": true
+      },
+      "processing_time": 0.14261817932128906
+    },
+    {
+      "case_id": "john_mary_project",
+      "text": "John works with Mary on the project. He thinks her approach is innovative, but she believes his methodology needs improvement.",
+      "difficulty": "easy",
+      "raw_predictions": "[CorefResult(text=\"John works with Mary on the project. He thinks her...\", clusters=[['Mary', 'her', 'she'], ['He', 'his']])]",
+      "analysis": {
+        "num_clusters": 2,
+        "clusters": [
+          [
+            "Mary",
+            "her",
+            "she"
+          ],
+          [
+            "He",
+            "his"
+          ]
+        ],
+        "cluster_sizes": [
+          3,
+          2
+        ],
+        "total_entities": 5,
+        "pronoun_clusters": [
+          [
+            "Mary",
+            "her",
+            "she"
+          ],
+          [
+            "He",
+            "his"
+          ]
+        ],
+        "has_pronoun_resolution": true
+      },
+      "processing_time": 0.10052990913391113
+    },
+    {
+      "case_id": "three_way_ambiguity",
+      "text": "Sarah, Lisa, and Emma went to the conference. She presented first, then she asked her a question, and finally she responded.",
+      "difficulty": "very_high",
+      "raw_predictions": "[CorefResult(text=\"Sarah, Lisa, and Emma went to the conference. She ...\", clusters=[['She', 'she'], ['her', 'she']])]",
+      "analysis": {
+        "num_clusters": 2,
+        "clusters": [
+          [
+            "She",
+            "she"
+          ],
+          [
+            "her",
+            "she"
+          ]
+        ],
+        "cluster_sizes": [
+          2,
+          2
+        ],
+        "total_entities": 4,
+        "pronoun_clusters": [
+          [
+            "She",
+            "she"
+          ],
+          [
+            "her",
+            "she"
+          ]
+        ],
+        "has_pronoun_resolution": true
+      },
+      "processing_time": 0.09388017654418945
+    },
+    {
+      "case_id": "organization_person",
+      "text": "Microsoft hired Sarah as a director. The company believes she will transform their cloud strategy.",
+      "difficulty": "medium",
+      "raw_predictions": "[CorefResult(text=\"Microsoft hired Sarah as a director. The company b...\", clusters=[['Sarah', 'she'], ['The company', 'their']])]",
+      "analysis": {
+        "num_clusters": 2,
+        "clusters": [
+          [
+            "Sarah",
+            "she"
+          ],
+          [
+            "The company",
+            "their"
+          ]
+        ],
+        "cluster_sizes": [
+          2,
+          2
+        ],
+        "total_entities": 4,
+        "pronoun_clusters": [
+          [
+            "Sarah",
+            "she"
+          ],
+          [
+            "The company",
+            "their"
+          ]
+        ],
+        "has_pronoun_resolution": true
+      },
+      "processing_time": 0.09724187850952148
+    },
+    {
+      "case_id": "long_distance_reference",
+      "text": "Dr. Johnson published a groundbreaking study last year. The research examined climate patterns across multiple decades. Many scientists praised the methodology. However, some critics argued that the conclusions were overstated. Despite the controversy, she continues to defend her work.",
+      "difficulty": "medium",
+      "raw_predictions": "[CorefResult(text=\"Dr. Johnson published a groundbreaking study last ...\", clusters=[['a groundbreaking study', 'The research'], ['Dr. Johnson', 'she', 'her']])]",
+      "analysis": {
+        "num_clusters": 2,
+        "clusters": [
+          [
+            "a groundbreaking study",
+            "The research"
+          ],
+          [
+            "Dr. Johnson",
+            "she",
+            "her"
+          ]
+        ],
+        "cluster_sizes": [
+          2,
+          3
+        ],
+        "total_entities": 5,
+        "pronoun_clusters": [
+          [
+            "Dr. Johnson",
+            "she",
+            "her"
+          ]
+        ],
+        "has_pronoun_resolution": true
+      },
+      "processing_time": 0.09101510047912598
+    }
+  ],
+  "summary": {
+    "total_cases": 5,
+    "successful_cases": 5,
+    "total_time": 0.5252852439880371,
+    "avg_time_per_case": 0.10505704879760742,
+    "success_rate": 1.0
+  }
+}
